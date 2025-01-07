@@ -1,9 +1,8 @@
 digits = ""
 try:
-  with open('./8/number.txt', 'r') as file_object:
-    names_str = file_object.read()
-    digits = names_str.replace("\n", "")
-
+  with open("./8/number.txt", 'r') as file_object:
+    numbers_str = file_object.read()
+    digits = numbers_str.replace("\n", "")
 except FileNotFoundError:
   print("Error: File 'names.txt' not found.")
 
